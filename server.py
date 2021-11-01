@@ -6,7 +6,7 @@ port = 55555
 
 admin_password = input("Please enter the password of the admin: ")
 
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 server.bind((host, port))
 server.listen()
 
