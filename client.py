@@ -12,7 +12,7 @@ nickname = input("Choose a nickname: ")
 if nickname == "admin":
     password = input("Please enter admin password: ")
 
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 client.connect((host, port))
 
 stop_thread = False
